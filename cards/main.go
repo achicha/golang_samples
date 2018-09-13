@@ -1,3 +1,5 @@
+/* card game */
+
 package main
 
 func main() {
@@ -14,5 +16,3 @@ func main() {
 	//hand.print()
 	//println(remainingCards.toString())
 }
-
-

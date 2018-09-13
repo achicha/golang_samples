@@ -1,3 +1,5 @@
+/* simple for loop with odd/even numbers */
+
 package main
 
 import (
