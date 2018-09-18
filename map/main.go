@@ -2,7 +2,10 @@
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
 
@@ -32,4 +35,14 @@ func printMap(c map[string]string) {
 	for key, value := range c {
 		fmt.Println("color=", key, "hex=", value)
 	}
+}
+
+func duplicate_count(s string) (c int) {
+	h := map[rune]int{}
+	for _, r := range strings.ToLower(s) {
+		if h[r]++; h[r] == 2 {
+			c++
+		}
+	}
+	return
 }
